@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ABD1C9"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ImageView_Logo"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/logo"/>
+
+    <Button
+        android:id="@+id/Button_Alert"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/alert2"
+        android:fontFamily="monospace"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="AlertSound"/>
+
+    <Button
+        android:id="@+id/Button_Emergency"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_style"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="AFET BİLDİR"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImageView_Logo"
+        android:fontFamily="serif" />
+
+    <Button
+        android:id="@+id/Button_Support"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="Yardım Talep Et"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button_Emergency"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif" />
+
+    <Button
+        android:id="@+id/Button_Contact"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="İLETİŞİM KUR"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button_Support"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif" />
+
+    <Button
+        android:id="@+id/Button_AboutUs"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_style"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="HAKKIMIZDA"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button_Contact"
+        android:fontFamily="serif"  />
+
+    <Button
+        android:id="@+id/Button_Login"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:onClick="Login"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="YÖNETİCİ GİRİŞİ YAP"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button_AboutUs"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif" />
+
+    <TextView
+        android:id="@+id/TextView_slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="monospace"
+        android:text="Bizler Sizin İçin Varız"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
